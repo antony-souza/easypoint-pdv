@@ -1,0 +1,53 @@
+# Build do .NET
+[Bb]in/
+[Oo]bj/
+artifacts/
+publish/
+
+# Visual Studio, Rider e VS Code
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.DotSettings.user
+
+# Resultados de testes e cobertura
+[Tt]est[Rr]esult*/
+TestResults/
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+# Pacotes e caches
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
+~$*
+
+# Configurações e segredos locais
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.Local.json
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
