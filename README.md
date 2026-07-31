@@ -61,4 +61,4 @@ O SQLite não é a fonte oficial dos dados. Ele representa o estado local necess
 
 ## Princípio
 
-> **O caixa não pode parar porque a internet caiu.**
+* **O caixa não pode parar porque a internet caiu.**
