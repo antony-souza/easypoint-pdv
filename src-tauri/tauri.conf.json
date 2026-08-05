@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "app",
+  "productName": "Ponto Fácil PDV",
   "version": "0.1.0",
   "identifier": "com.easypoint.pdv",
   "build": {
@@ -12,9 +12,11 @@
   "app": {
     "windows": [
       {
-        "title": "app",
-        "width": 800,
-        "height": 600
+        "title": "Ponto Fácil | PDV",
+        "width": 1024,
+        "height": 700,
+        "minWidth": 680,
+        "minHeight": 560
       }
     ],
     "security": {

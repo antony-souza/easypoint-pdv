@@ -1,0 +1,86 @@
+.app-shell {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f5f7f4;
+}
+
+.login-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(1080px, calc(100% - 48px));
+  min-height: 600px;
+  margin: auto;
+  grid-template-columns: minmax(300px, 0.92fr) minmax(380px, 1.08fr);
+  overflow: hidden;
+  border: 1px solid rgba(215, 223, 216, 0.9);
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 28px 70px rgba(33, 57, 45, 0.12), 0 4px 12px rgba(33, 57, 45, 0.04);
+}
+
+.login-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 54px clamp(36px, 6vw, 82px);
+  background: #ffffff;
+}
+
+.mobile-brand-lockup {
+  display: none;
+  margin-bottom: 38px;
+  color: #183c31;
+}
+
+.app-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  padding: 18px 24px 20px;
+  color: #8a978f;
+  font-size: 11px;
+}
+
+.footer-separator {
+  color: #b7c2ba;
+}
+
+@media (max-width: 760px) {
+  .login-layout {
+    width: min(500px, calc(100% - 28px));
+    min-height: 0;
+    grid-template-columns: 1fr;
+    border-radius: 22px;
+  }
+
+  .brand-panel {
+    display: none;
+  }
+
+  .login-card {
+    min-height: 590px;
+    padding: 32px 28px 36px;
+  }
+
+  .mobile-brand-lockup {
+    display: flex;
+  }
+}
+
+@media (max-height: 700px) and (min-width: 761px) {
+  .login-layout {
+    min-height: 540px;
+  }
+
+  .login-card {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+}

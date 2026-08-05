@@ -1,0 +1,152 @@
+.brand-panel {
+  position: relative;
+  display: flex;
+  min-height: 600px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 42px 44px 36px;
+  color: #f5fbf7;
+  background: #183c31;
+}
+
+.brand-panel::before,
+.brand-panel::after {
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 250px;
+  content: "";
+  border: 1px solid rgba(192, 232, 201, 0.16);
+  border-radius: 42% 58% 62% 38% / 43% 41% 59% 57%;
+  pointer-events: none;
+}
+
+.brand-panel::before {
+  right: -130px;
+  bottom: 70px;
+  transform: rotate(22deg);
+}
+
+.brand-panel::after {
+  right: -62px;
+  bottom: 10px;
+  width: 220px;
+  height: 220px;
+  transform: rotate(-28deg);
+  opacity: 0.65;
+}
+
+.brand-lockup {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.brand-name {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: #193d31;
+  border-radius: 12px;
+  background: #b9e1c0;
+  box-shadow: 0 8px 20px rgba(5, 28, 20, 0.16);
+}
+
+.brand-mark svg {
+  width: 24px;
+  height: 24px;
+}
+
+.brand-mark--compact {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.brand-mark--compact svg {
+  width: 20px;
+  height: 20px;
+}
+
+.brand-message {
+  position: relative;
+  z-index: 1;
+  max-width: 310px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 74px;
+}
+
+.eyebrow {
+  display: block;
+  color: #3a9570;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.eyebrow--light {
+  color: #a8d4b3;
+}
+
+.brand-message h1 {
+  max-width: 285px;
+  margin: 15px 0 17px;
+  color: #f5fbf7;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 700;
+  letter-spacing: -0.065em;
+  line-height: 1.03;
+}
+
+.brand-message p {
+  max-width: 285px;
+  margin: 0;
+  color: #bed6c5;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.brand-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #a9cabc;
+  font-size: 12px;
+}
+
+.online-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #90d59e;
+  box-shadow: 0 0 0 4px rgba(144, 213, 158, 0.12);
+}
+
+@media (max-height: 700px) and (min-width: 761px) {
+  .brand-panel {
+    min-height: 540px;
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  .brand-message {
+    padding-top: 36px;
+  }
+}

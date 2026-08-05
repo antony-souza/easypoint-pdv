@@ -1,0 +1,150 @@
+.cash-register-card {
+  display: flex;
+  min-height: 222px;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 22px 22px 18px;
+  color: #1b2a22;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid #e0e9e2;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(32, 61, 44, 0.035);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.cash-register-card:hover:not(:disabled) {
+  border-color: #a9d6b5;
+  box-shadow: 0 14px 28px rgba(32, 83, 52, 0.1);
+  transform: translateY(-2px);
+}
+
+.cash-register-card:focus-visible {
+  border-color: #55a979;
+  outline: 3px solid rgba(86, 170, 126, 0.2);
+  outline-offset: 3px;
+}
+
+.cash-register-card.is-selected {
+  border-color: #4caa75;
+  box-shadow: 0 0 0 3px rgba(76, 170, 117, 0.12), 0 12px 26px rgba(32, 83, 52, 0.09);
+}
+
+.cash-register-card.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+.cash-register-card__topline,
+.cash-register-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cash-register-card__icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: #277653;
+  border-radius: 13px;
+  background: #e9f6ec;
+}
+
+.cash-register-card__icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cash-register-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #a1674b;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.cash-register-card__status.is-active {
+  color: #39805a;
+}
+
+.cash-register-card__status span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c7825e;
+}
+
+.cash-register-card__status.is-active span {
+  background: #70ba83;
+  box-shadow: 0 0 0 3px rgba(112, 186, 131, 0.14);
+}
+
+.cash-register-card__content {
+  display: grid;
+  gap: 6px;
+  margin-top: 21px;
+}
+
+.cash-register-card__eyebrow {
+  color: #8e9c93;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cash-register-card__content strong {
+  overflow: hidden;
+  color: #203129;
+  font-size: 21px;
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cash-register-card__code {
+  color: #87968d;
+  font-size: 12px;
+}
+
+.cash-register-card__code b {
+  color: #52645a;
+  font-weight: 750;
+}
+
+.cash-register-card__footer {
+  margin-top: auto;
+  padding-top: 18px;
+  color: #347d5c;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.cash-register-card.is-disabled .cash-register-card__footer {
+  color: #9b8a80;
+}
+
+.cash-register-card__arrow {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 8px;
+  background: #f0f8f1;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.cash-register-card:hover:not(:disabled) .cash-register-card__arrow {
+  background: #dff1e3;
+  transform: translateX(2px);
+}
+
+.cash-register-card__arrow svg {
+  width: 16px;
+  height: 16px;
+}

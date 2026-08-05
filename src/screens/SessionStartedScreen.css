@@ -1,0 +1,99 @@
+.success-state {
+  display: flex;
+  width: min(100%, 420px);
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.success-state h2 {
+  margin: 9px 0 9px;
+  color: #18231e;
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 750;
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+}
+
+.success-state > p {
+  max-width: 335px;
+  margin: 0;
+  color: #718079;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.success-icon {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 28px;
+  place-items: center;
+  color: #287452;
+  border: 8px solid #e8f5ea;
+  border-radius: 50%;
+  background: #ccebd2;
+}
+
+.success-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.session-summary {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0 25px;
+  padding: 13px 15px;
+  border: 1px solid #e1ebe3;
+  border-radius: 12px;
+  background: #f8fbf8;
+}
+
+.session-avatar {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  color: #246a4a;
+  border-radius: 50%;
+  background: #d6edda;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.session-summary div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.session-summary strong {
+  overflow: hidden;
+  color: #2a3c32;
+  font-size: 13px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.session-summary span:not(.session-avatar) {
+  color: #7b8a82;
+  font-size: 11px;
+}
+
+.text-button {
+  padding: 6px 0;
+  color: #347d5c;
+  cursor: pointer;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.text-button:hover {
+  color: #1e6043;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

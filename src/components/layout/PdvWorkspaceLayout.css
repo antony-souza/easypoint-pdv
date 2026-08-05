@@ -1,0 +1,151 @@
+.workspace-shell {
+  min-height: 100vh;
+  color: #18231e;
+  background: #f4f7f5;
+}
+
+.workspace-header {
+  border-bottom: 1px solid #e4ebe6;
+  background: #ffffff;
+}
+
+.workspace-header__inner {
+  display: flex;
+  width: min(1160px, calc(100% - 48px));
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.workspace-brand {
+  color: #183c31;
+}
+
+.workspace-header__actions,
+.workspace-identity {
+  display: flex;
+  align-items: center;
+}
+
+.workspace-header__actions {
+  gap: 20px;
+}
+
+.workspace-identity {
+  gap: 10px;
+}
+
+.workspace-avatar {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: #256d4b;
+  border: 1px solid #d0e8d6;
+  border-radius: 50%;
+  background: #e7f4e9;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.workspace-identity div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.workspace-identity strong {
+  max-width: 230px;
+  overflow: hidden;
+  color: #2b3c33;
+  font-size: 12px;
+  font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.workspace-identity div span {
+  color: #87958c;
+  font-size: 10px;
+}
+
+.workspace-signout {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  color: #6f7f76;
+  cursor: pointer;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.workspace-signout:hover {
+  color: #276c4c;
+  background: #eef7f0;
+}
+
+.workspace-signout svg {
+  width: 17px;
+  height: 17px;
+}
+
+.workspace-main {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 48px 0 35px;
+}
+
+.workspace-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 24px 20px;
+  color: #96a29b;
+  font-size: 10px;
+}
+
+.workspace-footer__status {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #77b98a;
+  box-shadow: 0 0 0 3px rgba(119, 185, 138, 0.12);
+}
+
+.workspace-footer__separator {
+  color: #c0cbc3;
+}
+
+@media (max-width: 680px) {
+  .workspace-header__inner,
+  .workspace-main {
+    width: min(100% - 32px, 520px);
+  }
+
+  .workspace-header__inner {
+    min-height: 68px;
+  }
+
+  .workspace-header__actions {
+    gap: 6px;
+  }
+
+  .workspace-identity div {
+    display: none;
+  }
+
+  .workspace-signout {
+    padding-right: 0;
+  }
+
+  .workspace-main {
+    padding-top: 34px;
+  }
+}
